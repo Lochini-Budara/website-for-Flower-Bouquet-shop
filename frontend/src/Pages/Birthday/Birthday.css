@@ -1,0 +1,26 @@
+.birthday_topic{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.card{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.placard{
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.singlecard{
+    display:flex;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.cardimage{
+    width:300px;
+    height:300px;
+}
