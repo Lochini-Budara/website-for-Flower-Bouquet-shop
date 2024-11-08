@@ -71,3 +71,12 @@
     box-shadow: 2px 2px 2px 2px;
     border: 2px solid #e68d8d; 
 }
+
+.hash{
+    text-decoration: none;
+    color:black;
+}
+
+.hash:hover{
+    color:#e68d8d;
+}
