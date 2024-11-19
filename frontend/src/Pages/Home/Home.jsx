@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Header from '../../Components/Header/Header';
-import front4 from '../../assets/flower4.jpg'
+import front from '../../assets/frontmain.jpeg'
 import front5 from '../../assets/flower5.jpg'
 import front6 from '../../assets/flower6.jpg'
 import front7 from '../../assets/flower7.jpg'
@@ -89,11 +89,21 @@ function Home() {
             <Header/>
             <br/>
             <div className="front">
-                <img src={front4} className="frontimage" />
-
+               
+                
+               
+                    <div className="main_des">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis iusto nisi facilis ut fugiat voluptas, voluptatibus quo fuga aperiam aliquid tenetur qui ratione doloremque quisquam possimus porro nam debitis et.
+                    <br />
+                   <br />
                 <button className="customize_button">
                 <HashLink to="./Singleflower#customize " className="hash">customize your own bouqet</HashLink>  
                 </button>
+               
+                    </div>
+               
+                    <img src={front} className="frontimage" />
+              
             </div>
 
             <br /><br />

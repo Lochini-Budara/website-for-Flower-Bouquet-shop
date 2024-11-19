@@ -30,15 +30,17 @@
 
 .front{
     display:flex;
-    width:100%;
-    background-color:#ececf1;
+    background-color:#F8E2CA;
     padding:20px;
     gap:250px;
-   
+    justify-content: center;
+    align-items: center;
+    text-align:center;
 }
 
 .frontimage{
     width:600px;
+    height:550px;
   
 }
 
@@ -48,7 +50,7 @@
     font-size: 20px;
     font-weight: 600;
     background-color: black;
-    color:white;
+    color:#ffffff;
     border-radius: 20px;  
     justify-content: center;
     align-items: center;
@@ -63,6 +65,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding:5px;
     border-radius: 30px;
+    background-color: #F8E2CA;
 
 }   
 
@@ -70,6 +73,7 @@
     color:#e68d8d;
     box-shadow: 2px 2px 2px 2px;
     border: 2px solid #e68d8d; 
+    
 }
 
 .hash{
@@ -79,4 +83,13 @@
 
 .hash:hover{
     color:#e68d8d;
+}
+
+.main_des{
+    width:400px;
+    height:300px;
+    padding:20px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
 }

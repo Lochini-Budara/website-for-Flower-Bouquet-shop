@@ -14,6 +14,8 @@ import Engagement from "./Pages/Engagement/Engagement";
 import Funeral from "./Pages/Funeral/Funeral";
 import Upcoming from "./Components/Upcoming/Upcoming";
 import Singleflower from "./Pages/Singleflower/Singleflower";
+import Signup from "./Pages/Signup/Signup";
+import Login from "./Pages/Login/Login";
 
 
 const router = createBrowserRouter([
@@ -60,6 +62,14 @@ const router = createBrowserRouter([
   {
     path: "/Singleflower",
     element: <Singleflower/>,
+  },
+  {
+    path: "/Signup",
+    element: <Signup/>,
+  },
+  {
+    path: "/Login",
+    element: <Login/>,
   },
 
 ]);
