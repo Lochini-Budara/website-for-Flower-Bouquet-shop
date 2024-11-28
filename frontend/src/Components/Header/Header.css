@@ -62,7 +62,12 @@
 .header_icon{
     width:30px;
     height:30px;
-    
+    color:black;
+}
+
+.header_icon :hover{
+   
+    color:rgb(108, 105, 105);
 }
 
 .icon_container{

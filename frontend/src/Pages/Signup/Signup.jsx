@@ -75,6 +75,9 @@ function Signup() {
   
     return (
       <>
+     
+
+     
        <br />
         <br />
         <section id="signup">
@@ -182,7 +185,7 @@ function Signup() {
            
           </div>
         </section>
-       
+    
       </>
     );
   }

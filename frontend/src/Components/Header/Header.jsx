@@ -4,6 +4,7 @@ import logo from "../../assets/birthday.jpg";
 import Navlinks from "../../Navlinks";
 import { VscAccount } from "react-icons/vsc";
 import { FaShoppingCart } from "react-icons/fa";
+import { HashLink as Link } from "react-router-hash-link";
 
 function Header() {
   return (
@@ -21,8 +22,9 @@ function Header() {
           </div>
 
           <div className="icon_container">
-           <button className="icon_button"><VscAccount className="header_icon" /></button> 
-           <button className="icon_button"> <FaShoppingCart className="header_icon" /></button> 
+          <button className="icon_button"><Link to = "/Signup#signup">  <VscAccount className="header_icon" /> </Link></button>
+           
+           <button className="icon_button"> <Link to="/Login#login"> <FaShoppingCart className="header_icon" /> </Link></button> 
           </div>
         </div>
 
@@ -30,8 +32,8 @@ function Header() {
 
         <hr />
         <div className="navigation_bars">
-          <Navlinks linkname=" Home " url="Home" className="navlink" />
-          <Navlinks linkname=" Birthday " url="Birthday" className="navlink" />
+          <Navlinks linkname= "Home" url="Home" className="navlink" />
+          <Navlinks linkname= "Birthday" url="Birthday" className="navlink" />
           <Navlinks
             linkname=" Graduations"
             url="Graduations"
@@ -49,8 +51,7 @@ function Header() {
             className="navlink"
           />
           <Navlinks linkname="Funeral" url="Funeral" className="navlink" />
-          <Navlinks linkname="Signup" url="Signup" className="navlink" />
-          <Navlinks linkname="Login" url="Login" className="navlink" />
+        
         </div>
       </div>
     </>
