@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './Signup.css'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Link } from "react-router-dom";
 
 
 function Signup() {
@@ -179,6 +180,11 @@ function Signup() {
                 <center>You agree to our terms and policies.</center>
                 <br />
                 <br />
+              
+              <Link to="/Login#login">
+                <button type="submit" className="signup_button">
+                  Login
+                </button></Link>
               </form>
             </div>
   

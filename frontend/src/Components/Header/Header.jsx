@@ -24,7 +24,7 @@ function Header() {
           <div className="icon_container">
           <button className="icon_button"><Link to = "/Signup#signup">  <VscAccount className="header_icon" /> </Link></button>
            
-           <button className="icon_button"> <Link to="/Login#login"> <FaShoppingCart className="header_icon" /> </Link></button> 
+           <button className="icon_button"> <FaShoppingCart className="header_icon" /> </button> 
           </div>
         </div>
 
