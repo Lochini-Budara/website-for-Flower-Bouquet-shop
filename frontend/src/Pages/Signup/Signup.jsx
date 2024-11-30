@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+{/*import React, { useState } from "react";
 import './Signup.css'
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
@@ -195,4 +195,97 @@ function Signup() {
       </>
     );
   }
-export default Signup
+export default Signup */}
+
+import React, { useState } from "react";
+import './Signup.css';
+import { Link } from "react-router-dom";
+import axios from "axios";
+
+function Signup() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        axios.post('http://127.0.0.1:3001/register', { name, email, password })
+            .then(result => {
+                console.log(result);
+                // Handle success, e.g., redirect or show a message
+            })
+            .catch(err => {
+                console.log(err);
+                // Handle error, e.g., show an error message
+            });
+    };
+
+    return (
+        <>
+            <br />
+            <br />
+            <section id="signup">
+                <div className="signup">
+                    <div className="signup_form">
+                        <form onSubmit={handleSubmit}>
+                            <div className="signup_name">Sign Up</div>
+                            <br />
+                            <label>
+                                Name:
+                                <br />
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Enter Name"
+                                    className="signup_input"
+                                    onChange={(e) => setName(e.target.value)}
+                                />
+                            </label>
+                            <br />
+                            <br />
+                            <label>
+                                Email:
+                                <br />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Example@gmail.com"
+                                    className="signup_input"
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                            </label>
+                            <br />
+                            <br />
+                            <label>
+                                Password:
+                                <br />
+                                <input
+                                    type="password"
+                                    name="password"
+                                    placeholder="********"
+                                    className="signup_input"
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
+                            </label>
+                            <br />
+                            <br />
+                            <button type="submit" className="signup_button">
+                                Sign Up
+                            </button>
+                            <center>You agree to our terms and policies.</center>
+                            <br />
+                            <br />
+                            <Link to="/Login#login">
+                                <button type="button" className="signup_button">
+                                    Login
+                                </button>
+                            </Link>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}
+
+export default Signup;
